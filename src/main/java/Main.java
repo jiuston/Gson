@@ -11,7 +11,7 @@ public class Main {
         String personJSON = gson.toJson(persona);
         System.out.println(personJSON);
         try {
-            PrintWriter printWriter= new PrintWriter(new FileWriter("listaPersonas.json"),true);
+            PrintWriter printWriter= new PrintWriter(new FileWriter("listaPersonas.json",true));
             printWriter.println(personJSON);
             printWriter.close();
         } catch (IOException e) {
